@@ -1,4 +1,16 @@
-print('Random')
-print('ASDADAS')
-print('maana')
-print('SsSa')
+import json
+
+
+data = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+
+
+json_data = json.dumps(data)
+
+with open('data.json', 'w') as file:
+    file.write(json_data)
+
+print("JSON файл успешно создан.")
